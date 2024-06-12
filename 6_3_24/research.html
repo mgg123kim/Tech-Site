@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Research</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Header Tagline-->
+  <header>
+    <h1>Technological Advancements</h1>
+  </header>
+  <!--Nav-->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="robotics.html" target="_blank">Robotics</a></li>
+      <li><a href="ai.html">AI</a>
+        <!--AI dropdown-->
+        <ul>
+          <li><a href="chat-gpt.html">Chat GPT</a></li>
+        </ul>
+      </li>
+      <li><a href="iot.html">Internet of Things</a>
+        <!--IOT dropdown-->
+        <ul>
+          <li><a href="smartwatch.html">Smart Watches</a></li>
+          <li><a href="pmd.html">Personal Medical Devices</a></li>
+          <li><a href="smarthome.html">Smart Home</a></li>
+          <li><a href="futuristic-cars.html">Smart Car</a></li>
+        </ul>
+      </li>
+      <li><a href="research.html" target="_blank">Research</a></li>
+    </ul>
+  </nav>
+  <!--DIV-row-->
+  <div class="audio">
+  <audio controls>
+    <source src="Kim Made It Possible.mp3" type="audio/mpeg">
+    <source src="Kim Made It Possible.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+</div> 
+  <div class="row">
+    <img src="jgi.png" style="display: block; justify-self: center;" alt="Chihuahua smirking" class="research">
+    <h2 class="research-text"><bb>Just Google It</bb></h2>
+  </div>
+  <!--Form-->
+  <form id="myForm" method="post" action="https://webdevbasics.net/scripts/demo.php">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="address">Address:</label><br>
+      <input type="text" id="address" name="address" required><br>
+      <label for="city">City:</label><br>
+      <input type="text" id="city" name="city"><br>
+      <label for="state">State:</label><br>
+      <input type="text" id="state" name="state"><br>
+      <label for="zip">Zip Code:</label><br>
+      <input type="text" id="zip" name="zip"><br>
+      <label for="country">Country:</label><br>
+      <input type="text" id="country" name="country"><br>
+    </fieldset>
+    <fieldset>
+      <legend>Survey</legend>
+      <label for="experience">Experience with our service:</label><br>
+      <input type="range" id="experience" name="experience" min="1" max="10"><br>
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments"></textarea><br>
+    </fieldset>
+    <input type="submit" value="Submit">
+  </form>
+  <!--JS Form Submission-->
+  <script>
+    document.getElementById('myForm').addEventListener('submit', function(e) {
+      e.preventDefault(); 
+      alert('Form has been submitted. Thank you!');
+    });
+  </script>
+</body>
+<!--FOOTER-->
+<footer>
+  <i>Copyright © 2024 Kim Estrada</i>
+</footer>
+</html>

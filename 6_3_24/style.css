@@ -1,0 +1,502 @@
+/* Import the Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Stacking menu items vertically on mobile */
+/* Stacking menu items vertically on mobile */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li ul {
+        position: static; /* Reset position for mobile */
+        display: none; /* Hide submenus by default */
+    }
+
+    nav ul li:hover ul {
+        display:inline-block; /* Show submenu on parent hover */
+    }
+
+      .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-shadow: #02020f;
+        font-weight: 100;
+        margin-top: 10%;
+        font-size: 10px;  
+      }
+      .button-container{
+        display: flex;
+        justify-content: center;
+      }
+
+    header h1{
+        font-size: 2em;
+        text-align: center;
+        color: aliceblue;
+    }
+    .column{
+        width: 100%;
+    }
+/* robotics  */
+    .robotics iframe {
+        width: 100%;
+        height: auto;
+    }
+    .robotics iframe{
+        width: 100%;
+        height: auto;
+    }
+    .column {
+        width: 100%;
+        height: auto;
+    }
+    /* CHAT GPT table */
+  /* Hide the table for mobile viewport */
+  .responsive-table {
+    display: none;
+  }
+  
+  /* Display table data */
+  .table-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .table-list-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  .table-list-item:last-child {
+    border-bottom: none;
+  }
+
+  .table-list-item h3 {
+    margin-top: 0;
+  }
+
+  .table-list-item p {
+    margin-bottom: 0;
+  }
+    /* Label the data */
+    .table-cell:nth-of-type(1):before { content: "Ai Samples"; }
+    .table-cell:nth-of-type(2):before { content: "Type"; 
+    }
+/* Internet of Things */
+    .IOT{
+        width: 100%;
+        height: auto;
+    }
+ /* CTA button styling GLOBAL */
+    button {
+        width: 200px;
+        font-size: 16px;
+        padding: 10px 20px; 
+        margin: 10px 0; 
+        text-align: center;
+    }
+/* Centering button container IOT*/
+    .button-container {
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+    }
+
+    /* Research form  */
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      font-size: 14px; /* Adjust as needed */
+    }
+  
+    form input[type="submit"] {
+      font-size: 14px; /* Adjust as needed */
+      padding: 5px 10px;
+    }    
+
+}
+
+
+/* Tablet screen adjustment */
+@media only screen and (min-width:601px) and (max-width:1024px){
+
+    header h1{
+        font-size: 2.5em;
+    }
+    .column{
+        width: 50%;
+    }
+    .robotics iframe{
+        width: 100%;
+        height: auto;
+    }
+    .column img{
+        width: 100%;
+        height: auto;
+    }
+    /* Internet of Things */
+    .IOT{
+        width: 100%;
+        height: auto;
+    }
+    /* Centering button container IOT*/
+    .button-container {
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+    }
+
+}
+/* Media query for larger screens (desktop)*/
+@media screen and (min-width: 1025px) {
+    .column {
+        width: 33.33%;
+    }
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px; /*remove default */
+    padding: 10px; /*remove default */ 
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    width: 90vw;
+    padding:2%;
+}
+/* Full-width navigation menu */
+nav {
+    background-color: #7dbbe1; 
+    width: 100%;
+    padding: 0.5em 0; 
+}
+nav a { 
+    text-decoration: none; display: block;
+    padding: 1em 2em;
+    transition: 2s linear;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul ul { 
+    position: absolute;
+    background-color: #85c1e4;
+    padding: 0;
+    text-align: center;
+    display: none; 
+}
+nav ul ul li { 
+    border: 1px solid #00005D;
+    display: block;
+    width: 8em;
+    padding-left: 0em;
+    margin: 0; 
+}
+
+nav ul li {
+    margin: 0 10px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+nav ul li a:hover {
+    background-color: #94b4f0; 
+    transition-duration: .3ms;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav li:hover ul { 
+    display: block;
+    color: #5564A0; 
+}
+/* Search Bar  */
+.search-bar {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 20px;
+}
+/* Header styling */
+header {
+    background-image: url(tech_chip.png);
+    background-blend-mode: darken;
+    background-color: #7dbbe1;
+    text-align: center;
+    padding: 10px 0; 
+    position: relative;
+}
+/* Hero Image  */
+.hero-image h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  .hero-image {
+    background-image: url("tech-home.png");
+    height: auto; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: #02020f;
+    font-weight: 100;
+  }
+  .hero-text h1 p{
+    text-shadow: #00005D;
+    font-weight: 100;
+  }
+ 
+  .hero-image p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  .button-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-btn {
+    background-color:#0f5079;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 4px #999;
+  }
+  .main-btn a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .main-btn a:visited{
+    color:#2a4084;
+    text-decoration: none;
+    color: #85c1e4;
+  }
+  
+header h1 {
+    text-align: center;
+    font-size: 36px;
+    color:aliceblue;
+}
+h1 {
+    font-size: 3em; 
+    color: aliceblue;
+    padding: 10px 0; 
+    border-radius: 15px;
+    text-shadow: 3px 3px 3px #2a4084;
+}
+
+h2{
+    text-shadow: 1px 1px 0 #CCC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+p {
+    overflow-wrap:break-word;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.element {
+    width: 90vw; /* 90% of the viewport width */
+}
+
+
+
+/* Footer styling */
+footer {
+    background-color: #7dbbe1; 
+    text-align: center;
+    padding: 20px 0; 
+    color: white;
+}
+
+/* CTA button styling */
+button {
+    background-color: #7dbbe1;
+    border: none;
+    font-size: 16px;
+    padding: 20px 20px; 
+    margin: 0; 
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ADDITIONAL PAGES */
+/* LANDING PAGE */
+.landing-page{
+    width: 50%;
+    height: 50%;
+    padding: 2%;
+    display: block;
+    margin: 0 auto;
+} 
+/* ROBOTICS */
+.robotics-giphy{
+    display: block;
+    margin: 0 auto;
+}
+/* CHAT GPT */
+.chatgpt{
+    image-orientation: inherit;
+    
+}
+/* TABLE_Ai */
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+  
+table td, table th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    vertical-align: middle; 
+}
+  
+table tr:nth-child(even) {
+    background-color: lightblue;
+}
+  
+table tr:nth-child(odd) {
+    background-color: darksalmon;
+}
+/* Styling CTA buttons IOT */
+.cta-button {
+    background-color:#2a4084; 
+    color: white;
+    margin: 45px;
+    width:80%;
+    height: 80%;
+    font-weight: 700;
+    letter-spacing: .2em;
+    background: linear-gradient(0deg, #184bc2 0%, #2062d3 49%, #356bff 50%);
+    border-radius: 5px;
+      }
+.button-container a{
+    text-decoration: none;
+}
+/* Centering button container IOT*/
+
+.button-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-inline-end: 45px;
+    padding-bottom: 45px;
+}
+
+.IOT{
+    width: 100%;
+    height: auto;
+} 
+/* IOT SMARTWATCHES */
+.smart-watches img {
+    max-width: 200px; /* FIX: Max-size*/
+    height: auto; /* Maintain aspect ratio */
+}
+/* IOT SMART HOME */
+
+/* RESEARCH */
+/*Audio*/
+.audio{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.research{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+} 
+.research-text{
+    text-align: center;
+}
+
+/* Form Style for research page  */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea[type="address"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #0f5079;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+  }
+/* GLOBAL button */
+button:hover {
+    background-color:#2062d3;
+}
