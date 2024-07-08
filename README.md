@@ -1,2 +1,2 @@
-https://mgg123kim.github.io/Tech-Site/
-HTML/CSS
+# https://mgg123kim.github.io/Tech-Site/
+
